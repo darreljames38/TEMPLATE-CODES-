@@ -1,0 +1,207 @@
+/*
+
+program which prints the sum of all the elements in the array:
+ 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int myarray[5] = { 10, 20, 30, 40, 50 };
+	int sum = 0;
+	for (int i = 0; i < 5; i++)
+	{
+		sum += myarray[i];
+	}
+	cout << "Sum of elements in my array: " << sum;
+}
+ 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int numbers[5], sum = 0;
+	cout << "enter 5 numbers: " << endl;
+
+	// storing 5 nums entered by user in an array
+	// finding the sum of nums entered
+
+	for (int i = 0; i < 5; ++i)
+	{
+		cin >> numbers[i];
+		sum += numbers[i];
+	}
+
+	cout << "Sum = " << sum << endl;
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+passing array to a function
+
+
+#include <iostream>
+using namespace std;
+void display(int marks[5]);
+int main()
+{
+	int marks [5] = {88, 76, 80, 50, 30};
+	display(marks);
+	return 0;
+
+}
+
+void display(int marks [5])
+{
+cout << "Displaying marks: " << endl;
+for (int i = 0; i < 5; ++i)
+{
+cout << "Student " << i + 1 << ": " << marks[i] << endl; 
+}
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+int main()
+{
+	int test[3][2] = { {2, -5}, {4, 0}, {10, 1} };
+	//accessing two dimensional array using loops
+
+	for (int i = 0; i < 3; ++i)
+	{
+		for (int j = 0; j < 2; ++j)
+		{
+			cout << "test [" << i << "][" << j << "j = " << test[i][j] << endl;
+		}
+
+	}
+	return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+passing two dimensional array to a function
+
+#include <iostream>
+using namespace std;
+void display(int n[3][2])
+{
+	cout << "Displaying values: " << endl;
+
+	for (int i = 0; i < 3; ++i)
+	{
+		for (int j = 0; j < 2; ++j)
+		{
+			cout << n[i][j] << " ";
+		}
+		cout << "\n";
+	}
+}
+
+int main()
+{
+	int num[3][2] = {
+		{3,4},
+		{5,2},
+		{1,6}
+	};
+
+	display(num);
+
+	return 0;
+}
+*/
