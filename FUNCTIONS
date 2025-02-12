@@ -1,0 +1,462 @@
+/*
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+// sqrt function
+int main()
+{
+    double a = 25; 
+    cout << "The square root of: " << a << is << sqrt(a) << endl;
+    
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+GUESSING RANDOM NUMBERS
+
+#include <iostream>
+#include <cstd.lib>
+#include <ctime> //time function
+
+using namespace std;
+
+int main()
+{
+    int num, tries, guess = 0;
+    srand(time(0));   //seed random number generator
+    num = rand() % 20 + 1; // random number between 1 and 20
+
+    cout << "Guess my number game \n\n";
+
+
+    do
+    {
+        cout << "Enter a guess between 1 and 20: ";
+        cin >> guess; 
+        tries++;
+
+        if (guess > num)
+            cout << "Too high \n\n";
+        else if (guess < num)
+            cout << "Too low! \n\n";
+        else
+            cout << "Correct! u got it in " << tries << " guesses \n\n"''
+
+
+    } while (guess != num);
+
+
+    return 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+//function to add and display sum in main function
+int add(int, int);
+
+int main()
+{
+    int num1, num2, sum;
+
+    cout << "Enters two numbers to add: ";
+    cin >> num1 >> num2;
+    
+    sum = add(num1, num2); // function call
+    cout << "Sum = " << sum;
+
+    return 0;
+}
+*/
+
+
+/*
+int add(int a, int b)
+{
+    int add;
+    add = a + b;
+
+    // return statement
+    return add; 
+} 
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*
+no argument and no return value
+
+#include <iostream>
+using namespace std;
+void prime();
+
+int main()
+{
+    prime(); // no argument is passed to prime()
+    return 0;
+}
+
+// return type of function is void because value is not returned.
+void prime()
+{
+    int num, i, flag = 0;
+    cout << "Enter a positive integer  enter to check: ";
+    cin >> num;
+
+    for (i = 2; i < num / 2; ++i)
+    {
+        if (num % i == 0)
+        {
+            flag = 1;
+            break;
+        }
+    }
+    if (flag == 1)
+    {
+        cout << num << " is not a prime number. ";
+    }
+    else
+    {
+        cout << num << " is a prime number. ";
+    }
+}
+*/
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+no arguments passed but a return value
+ 
+ 
+
+#include <iostream>
+using namespace std;
+int prime();
+
+int main()
+{
+   // no argument is passed to prime()
+    int num, i, flag = 0;
+
+    num = prime();
+
+    for (i = 2; i < num / 2; ++i)
+    {
+        if (num % i == 0)
+        {
+            flag = 1;
+            break;
+        }
+    }
+    if (flag == 1)
+    {
+        cout << num << " is not a prime number. ";
+    }
+    else
+    {
+        cout << num << " is a prime number. ";
+    }
+    return 0;
+} 
+
+int prime()
+{
+int n;
+printf("enter a positive integer to check: ");
+cin >> n;
+return n;
+}
+*/
+
+
+
+
+
+
+
+
+/*
+
+parameters and arguments
+
+#include <iostream>
+using namespace std;
+void MyFunction(string fname)
+{
+cout << fname << "Ramos \n";
+}
+
+int main()
+{
+MyFunction("Ronel");
+MyFunction("Jaylo");
+MyFunction("Maydo");
+
+return 0;
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+default arguments
+
+#include <iostream>
+using namespace std;
+
+void display(char = '*', int = 1)
+
+int main()
+{
+cout << "No argument passed: \n":
+display();
+
+cout << "First argument passed: \n";
+display('#');
+
+cout << "\n both argument passed: \n";
+display('$', 5);
+
+return 0;
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ 
+arguments passed but no return value 
+ 
+ 
+ 
+
+#include <iostream>
+using namespace std;
+
+void prime (int n);
+int main()
+{
+int num;
+
+cout << "Enter a positive integer to check: ";
+cin >> num;
+
+
+prime(num);
+
+
+return 0;
+}
+
+void prime(int n)
+{
+int i, flag = 0;
+for ( i = 2; i <= n/2; ++i)
+{
+if (n%i == 0)
+{
+flag = 1;
+break;
+}
+}
+if (flag == 1)
+{
+cout << n << " is not a prime number. ";
+}
+else 
+{
+cout << n << "is a prime number. ";
+}
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+arguments passed and return a value
+
+
+#include <iostream>
+using namespace std;
+int prime(int n);
+int main ()
+{
+int num, flag = 0;
+cout << "Enter positive integer to check: ";
+cin >> num;
+
+
+// argument num is passed to check() function
+
+flag = prime(num);
+if(flag == 1)
+cout << num << " is not a prime number. ";
+else 
+cout << num << " is a prime number. ";
+return 0;
+
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+function overloading
+
+
+#include <iostream>
+using namespace std;
+
+void display(int);
+void display(float);
+void display(int, float);
+
+
+int main()
+{
+int a = 5;
+float b = 7.9;
+display (a);
+display (b);
+display (a, b);
+
+return 0;
+}
+
+void display(int var)
+{
+cout << "interger num: " << var << endl;
+}
+
+void display(floar var)
+{
+cout << "Float num: " << var << endl;
+}
+
+
+void display(int var1, float var2)
+{
+cout << "Integer num: " << var1;
+cout << "and a flot num: " << var2;
+}
+
+
+
+*/
